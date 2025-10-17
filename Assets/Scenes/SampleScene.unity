@@ -266,6 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 121398314}
+  - component: {fileID: 121398316}
   - component: {fileID: 121398315}
   m_Layer: 0
   m_Name: Hod (1)
@@ -309,18 +310,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 121398313}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4805d365d0ae4144292c21fa363acef3, type: 3}
+  m_Script: {fileID: 11500000, guid: 480921ae37d86374198c260b40ec88b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HotDogs: {fileID: 11400000, guid: 21fcc5229c948d04491d6463c17aa4e9, type: 2}
-  OgurecPrice: 50
-  LuckPrice: 30
-  Ogurez: 0
-  Luck: 0
-  VesLuck: 10
-  VesOgurez: 20
   _textPrice: {fileID: 665283509}
   _textVes: {fileID: 1119572193}
+  LuckPrice: 30
+  Luck: 0
+  VesLuck: 10
+--- !u!114 &121398316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121398313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cdba063682eae4ab8186b6444caeba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HotDogs: {fileID: 11400000, guid: 21fcc5229c948d04491d6463c17aa4e9, type: 2}
+  _textPrice: {fileID: 665283509}
+  _textVes: {fileID: 1119572193}
+  OgurecPrice: 50
+  Ogurez: 0
+  VesOgurez: 20
 --- !u!1 &136255206
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +421,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 121398315}
-        m_TargetAssemblyTypeName: HotDogDecorator, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecorateLuck, Assembly-CSharp
         m_MethodName: GetLuck
         m_Mode: 1
         m_Arguments:
@@ -567,6 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 368449767}
+  - component: {fileID: 368449769}
   - component: {fileID: 368449768}
   m_Layer: 0
   m_Name: Hod
@@ -610,18 +627,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 368449766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4805d365d0ae4144292c21fa363acef3, type: 3}
+  m_Script: {fileID: 11500000, guid: 480921ae37d86374198c260b40ec88b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HotDogs: {fileID: 11400000, guid: a48715ba6bc20aa41afa9a63fc0070a3, type: 2}
-  OgurecPrice: 50
-  LuckPrice: 30
-  Ogurez: 0
-  Luck: 0
-  VesLuck: 10
-  VesOgurez: 20
   _textPrice: {fileID: 1917526167}
   _textVes: {fileID: 372376406}
+  LuckPrice: 30
+  Luck: 0
+  VesLuck: 10
+--- !u!114 &368449769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368449766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0cdba063682eae4ab8186b6444caeba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HotDogs: {fileID: 11400000, guid: a48715ba6bc20aa41afa9a63fc0070a3, type: 2}
+  _textPrice: {fileID: 1917526167}
+  _textVes: {fileID: 372376406}
+  OgurecPrice: 50
+  Ogurez: 0
+  VesOgurez: 20
 --- !u!1 &372376405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,8 +1366,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 368449768}
-        m_TargetAssemblyTypeName: HotDogDecorator, Assembly-CSharp
+      - m_Target: {fileID: 368449769}
+        m_TargetAssemblyTypeName: DecorateOgurez, Assembly-CSharp
         m_MethodName: GetOgurez
         m_Mode: 1
         m_Arguments:
@@ -1602,7 +1634,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 368449768}
-        m_TargetAssemblyTypeName: HotDogDecorator, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecorateLuck, Assembly-CSharp
         m_MethodName: GetLuck
         m_Mode: 1
         m_Arguments:
@@ -2270,8 +2302,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 121398315}
-        m_TargetAssemblyTypeName: HotDogDecorator, Assembly-CSharp
+      - m_Target: {fileID: 121398316}
+        m_TargetAssemblyTypeName: DecorateOgurez, Assembly-CSharp
         m_MethodName: GetOgurez
         m_Mode: 1
         m_Arguments:
@@ -2329,6 +2361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1030423114}
+  - component: {fileID: 1030423116}
   - component: {fileID: 1030423115}
   m_Layer: 0
   m_Name: Hod (2)
@@ -2372,18 +2405,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030423113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4805d365d0ae4144292c21fa363acef3, type: 3}
+  m_Script: {fileID: 11500000, guid: b0cdba063682eae4ab8186b6444caeba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HotDogs: {fileID: 11400000, guid: d489c390fd0105841ad5702e9e45ec62, type: 2}
-  OgurecPrice: 50
-  LuckPrice: 30
-  Ogurez: 0
-  Luck: 0
-  VesLuck: 10
-  VesOgurez: 20
   _textPrice: {fileID: 1219731780}
   _textVes: {fileID: 1543709168}
+  OgurecPrice: 50
+  Ogurez: 0
+  VesOgurez: 20
+--- !u!114 &1030423116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030423113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 480921ae37d86374198c260b40ec88b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HotDogs: {fileID: 11400000, guid: d489c390fd0105841ad5702e9e45ec62, type: 2}
+  _textPrice: {fileID: 1219731780}
+  _textVes: {fileID: 1543709168}
+  LuckPrice: 30
+  Luck: 0
+  VesLuck: 10
 --- !u!1 &1119572192
 GameObject:
   m_ObjectHideFlags: 0
@@ -3273,8 +3321,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1030423115}
-        m_TargetAssemblyTypeName: HotDogDecorator, Assembly-CSharp
-        m_MethodName: GetLuck
+        m_TargetAssemblyTypeName: DecorateOgurez, Assembly-CSharp
+        m_MethodName: GetOgurez
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3406,7 +3454,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1030423115}
-        m_TargetAssemblyTypeName: HotDogDecorator, Assembly-CSharp
+        m_TargetAssemblyTypeName: DecorateOgurez, Assembly-CSharp
         m_MethodName: GetOgurez
         m_Mode: 1
         m_Arguments:
